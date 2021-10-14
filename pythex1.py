@@ -21,7 +21,7 @@ if n < d:  # proper/improper fraction
         print("This proper fraction can be reduced to:", int(n / GCD), '/', int(d / GCD))
 
 elif n > d:
-    print(n, '/', d, "is an proper fraction.")
+    print(n, '/', d, "is an improper fraction.")
 
     if GCD == 1:
         print("This improper fraction cannot be reduced any further.")
