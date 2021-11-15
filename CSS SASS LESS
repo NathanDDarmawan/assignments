@@ -1,0 +1,55 @@
+# CSS 
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: blue;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  background: blue;
+}
+
+
+
+
+# SASS Example
+#using mixins
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  background: blue;
+}
+
+.card {
+  @include flex-column;
+}
+
+.card2 {
+  @include flex-column;
+}
+
+
+
+
+
+# LESS Example 
+#using variables
+
+@card-color: blue
+@card-color-hover: darken(@card-color, 10%);
+
+a,
+.card {
+  color: @card-color;
+}
+
+a:hover {
+  color: @card-color-hover;
+}
+
+
+
